@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="src/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Todo List</title>
 </head>
@@ -26,9 +27,8 @@
         <h2 class="text-4xl mb-2">
           Projects
         </h2>
-        <button class="hover:bg-purple-200">
-          Demo
-        </button>
+        <div id="projects__container">
+        </div>
       </div>
       <button class="bg-pink-300 px-3 py-2 rounded">
         Add a project
@@ -36,7 +36,7 @@
     </nav>
     <main class="flex flex-col justify-between items-center py-3 row-[3_/_4] col-[1_/_2] lg:col-[2_/_3] lg:row-[2_/_4]">
       <div class="bg-red-500 h-4 w-4"></div>
-      <button class="p-4 bg-purple-500 hover:bg-purple-400 rounded-md">
+      <button id="todo-btn" class="p-4 bg-purple-500 hover:bg-purple-400 rounded-md">
         <img src="/plus.svg" alt="Add a todo" class="w-8 h-8">
       </button>
     </main>

@@ -544,14 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
 .col-\[1_\/_2\] {
   grid-column: 1 / 2;
 }
@@ -596,12 +588,12 @@ video {
   height: 1rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-8 {
   height: 2rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-4 {
@@ -673,48 +665,12 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
-.bg-\[\'url\(\.\.\/public\/plus\.svg\)\'\] {
-  background-color: 'url(../public/plus.svg)';
-}
-
-.bg-\[url\(\'\.\.\/public\/plus\.svg\'\)\] {
-  background-image: url('../public/plus.svg');
-}
-
-.bg-\[url\(\'\/plus\.svg\'\)\] {
-  background-image: url('/plus.svg');
-}
-
-.bg-\[url\(\'\.\/plus\.svg\'\)\] {
-  background-image: url('./plus.svg');
-}
-
-.bg-\[url\(\'\.\/public\/plus\.svg\'\)\] {
-  background-image: url('./public/plus.svg');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .px-3 {
@@ -742,33 +698,13 @@ video {
   line-height: 1;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.hover\:bg-purple-200:hover {
+.hover\:bg-purple-400:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-purple-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-purple-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
-}
-
-.hover\:opacity-50:hover {
-  opacity: 0.5;
-}
-
-.focus\:bg-purple-300:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {

@@ -5,7 +5,7 @@ class Project {
         this.todos = todos;
     }
 
-    // This expects an object of tipe Todo
+    // This expects an object of type Todo
     addTodo(todo) {
         this.todos.push(todo);
     }
