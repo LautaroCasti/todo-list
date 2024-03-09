@@ -1,3 +1,8 @@
+:root {
+  --color-header: #cdb4db;
+  --color-nav: #FFC8DD;
+}
+
 .project {
   font-size: 30px;
 }
@@ -5,4 +10,64 @@
 .project:hover {
   cursor: pointer;
   background: #aaa;
+}
+
+#app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 6rem 1fr 4fr 2rem;
+
+}
+
+header {
+  background: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  grid-column: 1 / span 2;
+}
+
+.header__title {
+  font-size: 3.75rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0.75rem 0;
+  background: var(--color-nav);
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.nav__projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.projects__title {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects__container {
+  font-size: 1.5rem;
+}
+
+.projects__add {}
+
+
+@media (min-width: 1024px) {
+  #app {
+    grid-template-columns: 20rem 1fr;
+  }
+
+  nav {
+    grid-column: 1 / span 1;
+    grid-row: 2 / 4;
+  }
 }

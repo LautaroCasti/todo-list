@@ -2,8 +2,7 @@
 
 
 // TODO: Add a function to display the project that is selected, don't know if this is going to call a 
-// for each to each of the todos in that project or something different
-
+// for each to each of the todos in that project or something different who knows
 export function displayProjects(projects) {
     const projectsContainer = document.querySelector("#projects__container");
     console.log(projectsContainer);

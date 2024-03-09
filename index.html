@@ -11,27 +11,29 @@
 </head>
 
 <body>
-  <div id="app" class="grid grid-cols-1 grid-rows-[6rem_1fr_4fr_2rem] lg:grid-cols-[20rem_1fr] h-screen">
-    <header class="bg-purple-500 flex justify-between p-3 col-[1_/_span_2]">
-      <h1 class="text-6xl ">
+  <div id="app">
+    <header>
+      <h1 class="header__title">
         Todo list
       </h1>
-      <div>
+      <div class="header__user">
         <img src="" alt="Profile picture">
         <p>Your user</p>
       </div>
     </header>
-    <nav
-      class="flex flex-col justify-start items-center py-3 bg-blue-200 row-[2_/_3] col-[1_/_2] lg:col-[1_/_span_1] lg:row-[2_/_4]">
-      <div class="flex flex-col mb-3">
-        <h2 class="text-4xl mb-2">
+    <nav>
+      <div class="flex flex-col mb-3 nav__projects">
+        <h2 class="text-4xl mb-2 projects__title">
           Projects
         </h2>
         <div id="projects__container">
         </div>
       </div>
-      <button class="bg-pink-300 px-3 py-2 rounded">
+      <button class="bg-pink-300 px-3 py-2 rounded projects__add">
         Add a project
+      </button>
+      <button class="bg-red-300 px-3 py-2 rounded projects__delete">
+        Delete a project
       </button>
     </nav>
     <main class="flex flex-col justify-between items-center py-3 row-[3_/_4] col-[1_/_2] lg:col-[2_/_3] lg:row-[2_/_4]">
